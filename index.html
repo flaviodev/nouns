@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/NounType.js"></script>
+    <script src="js/NounTypeEnum.js"></script>
+    <script src="js/Noun.js"></script>
+    <script src="js/Training.js"></script>
+    <script src="js/NounController.js"></script>
+  </head>
+
+  <body>
+    <div id ='nouns'>
+      <h3>Tipos de Substantivo</h3>
+      <div>
+        <button type="button" id="btTrain" onclick="startTraining()">Treinar</button>
+      </div>
+    </div>
+
+    <div id ='nounPane' style="display: none;">
+      <div>Tempo para resposta: <span id="seconds"></span> segundos</div>
+
+      <p style="font-size: 50px;">
+        <span id="noun"></span> <br>
+        <input type="button" id="btCheckAnswer1" onclick="checkAnswer(1, event)" value="Simples">
+        <input type="button" id="btCheckAnswer2" onclick="checkAnswer(2, event)" value="Composto">
+        <input type="button" id="btCheckAnswer3" onclick="checkAnswer(3, event)" value="Primitivo">
+        <input type="button" id="btCheckAnswer4" onclick="checkAnswer(4, event)" value="Derivado">
+        <input type="button" id="btCheckAnswer5" onclick="checkAnswer(5, event)" value="Comum">
+        <input type="button" id="btCheckAnswer6" onclick="checkAnswer(6, event)" value="Próprio">
+        <input type="button" id="btCheckAnswer7" onclick="checkAnswer(7, event)" value="Coletivo">
+        <input type="button" id="btCheckAnswer8" onclick="checkAnswer(8, event)" value="Concreto">
+        <input type="button" id="btCheckAnswer9" onclick="checkAnswer(9, event)" value="Abstrato">
+      </p>
+    </div>
+
+    <div id="result" style="display: none;">
+      <h3>Resultado</h3>
+      <p>Certas: <span id="correctTotal">0</span></p> 
+      <p>Erradas: <span id="wrongTotal">0</span></p>
+      <p>Total: <span id="total">0</span></p>
+      <p>Tempo Médio por Resposta: <span id="avarageTime">0</span> segundos. </p>
+      <p>Pontuação: <span id="score">0</span></p>
+      <p id='wrongPanel' style='font-size: 20px;border-style: solid;'>Erradas</p>
+      <p id='correctPanel' style='font-size: 20px;border-style: solid;'>Certas</p>
+    </div>
+  </body>
+</html>
