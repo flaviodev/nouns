@@ -4,7 +4,7 @@ var currentNoun = undefined;
 
 var timeOutId;
 var intervalId;
-var secondsPerNoun = 10;
+var secondsPerNoun = 30;
 var timeLeft = secondsPerNoun;
 
 function getNounsList() {
