@@ -26,7 +26,7 @@ function getNounsList() {
   list.push(new Noun("vinagre", [COMPOSTO]));
 
   list.push(new Noun("algodão", [PRIMITIVO]));
-  list.push(new Noun("chuva", [PRIMITIVO]));
+  list.push(new Noun("chuva", [PRIMITIVO, CONCRETO]));
   list.push(new Noun("folha", [PRIMITIVO]));
   list.push(new Noun("pedra", [PRIMITIVO]));
   list.push(new Noun("quilo", [PRIMITIVO]));
@@ -55,7 +55,6 @@ function getNounsList() {
   list.push(new Noun("rebanho", [COLETIVO]));
 
   list.push(new Noun("mesa", [CONCRETO]));
-  list.push(new Noun("chuva", [CONCRETO]));
   list.push(new Noun("Felipe", [CONCRETO]));
   list.push(new Noun("cachorro", [CONCRETO]));
   list.push(new Noun("samambaia", [CONCRETO]));
